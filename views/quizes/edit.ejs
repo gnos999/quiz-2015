@@ -5,8 +5,11 @@
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 	</head>
 	<body>
-		<%= respuesta %><p>
-		<a href="/quizes"> Volver</a>
-		<%//= quiz.id %>
-	</body>
+<center>
+Edite la pregunta<p>
+<form method="post" action="/quizes/<%=quiz.id %>?_method=put" >
+	<% include _form.ejs %>
+</form>
+</center>
+</body>
 </html>

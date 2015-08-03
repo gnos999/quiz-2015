@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><title>Quiz</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+  	<center>
+  		<label for="preg" class="rem">Pregunta:</label>
+  		<input type="text"id="preg" name="quiz[pregunta]" value="<%= quiz.pregunta %>" <p><br>
+
+  		<label for="resp" class="rem">Respuesta:</label>
+  		<input type="text"id="resp" name="quiz[respuesta]" value="<%= quiz.respuesta %>" <p><br>
+      <label for="tem" class="rem">Tema: </label>
+      <select id="tem" name="quiz[tema]">
+        <option value="Otro" selected>Otro</option>
+        <option value="Humanidades">Humanidades</option>
+        <option value="Ocio">Ocio</option>
+        <option value="Ciencia">Ciencia</option>
+        <option value="Tecnologia">Tecnología</option>
+        <option value="Geografia">Goegrafia</option>
+      </select>
+      <p><br>
+
+  		<a href="/quizes"><button type="button">Cancelar</button></a>
+  		<input type="submit" value="Salvar">
+  		
+  	</center>
+</body>
+</html>
